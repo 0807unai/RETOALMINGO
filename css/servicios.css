@@ -1,0 +1,28 @@
+/* --- Estilos Específicos para servicios.html (AHORA CON FLEXBOX) --- */
+.rejilla-servicios {
+    /* --- CÓDIGO FLEX (para tarjetas de servicio) --- */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los items bajen a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-servicio {
+    /* Definimos la base: 300px, pero puede crecer (1) y encogerse (1) */
+    flex: 1 1 300px; 
+    
+    /* Evita que crezcan demasiado en una línea de 1 o 2 */
+    max-width: 350px; 
+    
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.tarjeta-servicio h3 {
+    color: var(--color-primario);
+    margin-top: 0;
+}

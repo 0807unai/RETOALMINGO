@@ -1,0 +1,30 @@
+/* --- Estilos Específicos para index.html --- */
+.seccion-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x700.png?text=Almingo+S.L.') no-repeat center center/cover;
+    color: var(--color-texto-claro);
+    padding: 8rem 5%;
+    text-align: center;
+    min-height: 70vh;
+    /* --- CÓDIGO FLEX --- */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* --- FIN CÓDIGO FLEX --- */
+}
+
+.seccion-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.seccion-hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .seccion-hero h1 {
+        font-size: 2.5rem;
+    }
+}
