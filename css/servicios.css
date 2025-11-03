@@ -1,28 +1,59 @@
-/* --- Estilos Específicos para servicios.html (AHORA CON FLEXBOX) --- */
-.rejilla-servicios {
-    /* --- CÓDIGO FLEX (para tarjetas de servicio) --- */
-    display: flex;
-    flex-wrap: wrap; /* Permite que los items bajen a la siguiente línea */
-    justify-content: center; /* Centra las tarjetas */
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.tarjeta-servicio {
-    /* Definimos la base: 300px, pero puede crecer (1) y encogerse (1) */
-    flex: 1 1 300px; 
-    
-    /* Evita que crezcan demasiado en una línea de 1 o 2 */
-    max-width: 350px; 
-    
-    background: #fff;
+.servicio-detalle {
+    background: rgba(15, 23, 42, 0.5);
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: left;
+    border-radius: 1rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    margin-bottom: 2rem;
 }
 
-.tarjeta-servicio h3 {
-    color: var(--color-primario);
-    margin-top: 0;
+.icono-servicio-grande {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-servicio {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion-servicio {
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.lista-servicio {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.lista-servicio li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    color: #cbd5e1;
+}
+
+.lista-servicio li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.etiqueta-tecnologia {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #3b82f6;
 }

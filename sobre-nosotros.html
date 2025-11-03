@@ -1,45 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Almingo S.L.</title>
+    <title>Sobre Nosotros - ALMINGO S.L.</title>
     <link rel="stylesheet" href="css/style.css">
-    </head>
+</head>
 <body>
+    <!-- Encabezado -->
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <div class="logo">
+                <span class="icono-logo">💻</span>
+                <span class="texto-logo">ALMINGO S.L.</span>
+            </div>
+            
+            <nav class="menu-navegacion">
+                <a href="index.html" class="enlace-menu">Inicio</a>
+                <a href="servicios.html" class="enlace-menu">Servicios</a>
+                <a href="sobre-nosotros.html" class="enlace-menu activo">Sobre Nosotros</a>
+                <a href="contacto.html" class="enlace-menu">Contacto</a>
+            </nav>
 
-    <header class="encabezado-global">
-        <nav class="navegacion-barra">
-            <div class="logotipo">Almingo S.L.</div>
-            <ul class="lista-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="pagina-actual"><a href="sobre-nosotros.html">About Us</a></li>
-                <li><a href="servicios.html">Services</a></li>
-                <li><a href="juego.html">The Almingo Game</a></li>
-                <li><a href="contacto.html">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="about-us.html" class="boton-idioma">
+                <span class="icono-idioma">🌐</span>
+                <span>EN</span>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section id="sobre-nosotros" class="seccion-contenido">
-            <h2>About Our Company</h2>
-            
-            <div class="contenedor-flex">
-                <div class="columna-texto">
-                    <p>Almingo S.L. is a premier software development firm dedicated to creating robust and scalable solutions for businesses worldwide. As we expand into the international market, our focus is on innovation, quality, and sustainable practices.</p>
-                    <p>Our team is composed of expert developers, designers, and project managers committed to excellence and adapting to the new management's vision for a modern, efficient, and global company.</p>
+    <!-- Hero -->
+    <section class="hero-sobre-nosotros">
+        <div class="contenedor-hero">
+            <h1 class="titulo-pagina">Sobre ALMINGO S.L.</h1>
+            <p class="subtitulo-pagina">Innovación, calidad y compromiso desde 2010</p>
+        </div>
+    </section>
+
+    <!-- Nuestra Historia -->
+    <section class="seccion-historia">
+        <div class="contenedor-seccion">
+            <div class="contenido-historia">
+                <div class="texto-historia">
+                    <h2 class="titulo-seccion-izquierda">Nuestra Historia</h2>
+                    <p class="parrafo-historia">
+                        ALMINGO S.L. nació en 2010 con una visión clara: democratizar el acceso a soluciones tecnológicas de calidad para empresas de todos los tamaños. Desde nuestros humildes comienzos en Bilbao, hemos crecido hasta convertirnos en un referente en desarrollo de software en el País Vasco.
+                    </p>
+                    <p class="parrafo-historia">
+                        A lo largo de estos años, hemos trabajado con más de 30 clientes, completado más de 50 proyectos exitosos, y lo más importante, hemos construido relaciones duraderas basadas en la confianza y la excelencia.
+                    </p>
+                    <p class="parrafo-historia">
+                        En 2024, bajo nueva gerencia, comenzamos una emocionante etapa de expansión internacional, manteniendo nuestro compromiso con la sostenibilidad y la innovación tecnológica.
+                    </p>
                 </div>
-                <div class="columna-imagen">
-                    <img src="fotos/trabajar-en-equipo.webp" alt="Our team working in the office">
+                <div class="imagen-historia">
+                    <div class="placeholder-historia">🏢</div>
                 </div>
             </div>
-            </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="pie-de-pagina">
-        <p>&copy; 2026 Almingo S.L. All rights reserved.</p>
+    <!-- Misión, Visión y Valores -->
+    <section class="seccion-mvv">
+        <div class="contenedor-seccion">
+            <div class="rejilla-mvv">
+                <div class="tarjeta-mvv">
+                    <div class="icono-mvv">🎯</div>
+                    <h3 class="titulo-mvv">Nuestra Misión</h3>
+                    <p class="texto-mvv">
+                        Proporcionar soluciones tecnológicas innovadoras y de calidad que ayuden a nuestros clientes a alcanzar sus objetivos empresariales, siempre con un enfoque sostenible y responsable.
+                    </p>
+                </div>
+                <div class="tarjeta-mvv">
+                    <div class="icono-mvv">🔭</div>
+                    <h3 class="titulo-mvv">Nuestra Visión</h3>
+                    <p class="texto-mvv">
+                        Ser el socio tecnológico de referencia en el ámbito internacional, reconocidos por nuestra excelencia técnica, innovación constante y compromiso con la sostenibilidad.
+                    </p>
+                </div>
+                <div class="tarjeta-mvv">
+                    <div class="icono-mvv">⭐</div>
+                    <h3 class="titulo-mvv">Nuestros Valores</h3>
+                    <ul class="lista-valores">
+                        <li>✓ Innovación continua</li>
+                        <li>✓ Excelencia técnica</li>
+                        <li>✓ Compromiso con el cliente</li>
+                        <li>✓ Sostenibilidad</li>
+                        <li>✓ Trabajo en equipo</li>
+                        <li>✓ Transparencia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="seccion-equipo-completo">
+        <div class="contenedor-seccion">
+            <h2 class="titulo-seccion">Nuestro Equipo</h2>
+            <p class="descripcion-seccion">
+                Profesionales apasionados por la tecnología y comprometidos con la excelencia
+            </p>
+            <div class="rejilla-equipo">
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👨‍💼</div>
+                    <h3 class="nombre-miembro">Carlos Martínez</h3>
+                    <p class="cargo-miembro">CEO & Fundador</p>
+                    <p class="descripcion-miembro">15 años de experiencia en desarrollo de software y gestión de proyectos tecnológicos.</p>
+                </div>
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👩‍💻</div>
+                    <h3 class="nombre-miembro">Ana García</h3>
+                    <p class="cargo-miembro">CTO</p>
+                    <p class="descripcion-miembro">Experta en arquitecturas escalables y nuevas tecnologías. Lidera nuestro equipo técnico.</p>
+                </div>
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👨‍💻</div>
+                    <h3 class="nombre-miembro">Javier López</h3>
+                    <p class="cargo-miembro">Lead Developer</p>
+                    <p class="descripcion-miembro">Especialista en desarrollo full-stack y metodologías ágiles.</p>
+                </div>
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👩‍🎨</div>
+                    <h3 class="nombre-miembro">María Sánchez</h3>
+                    <p class="cargo-miembro">UX/UI Designer</p>
+                    <p class="descripcion-miembro">Crea experiencias de usuario excepcionales que combinan estética y funcionalidad.</p>
+                </div>
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👨‍🔧</div>
+                    <h3 class="nombre-miembro">David Fernández</h3>
+                    <p class="cargo-miembro">DevOps Engineer</p>
+                    <p class="descripcion-miembro">Experto en infraestructura cloud y automatización de despliegues.</p>
+                </div>
+                <div class="tarjeta-miembro">
+                    <div class="foto-miembro">👩‍💼</div>
+                    <h3 class="nombre-miembro">Laura Rodríguez</h3>
+                    <p class="cargo-miembro">Project Manager</p>
+                    <p class="descripcion-miembro">Gestiona proyectos con metodología Agile garantizando entregas en tiempo y forma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section class="seccion-tecnologias">
+        <div class="contenedor-seccion">
+            <h2 class="titulo-seccion">Tecnologías que Dominamos</h2>
+            <div class="grid-tecnologias">
+                <div class="categoria-tecnologia">
+                    <h3 class="titulo-categoria-tech">Frontend</h3>
+                    <div class="lista-tech">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Angular</span>
+                    </div>
+                </div>
+                <div class="categoria-tecnologia">
+                    <h3 class="titulo-categoria-tech">Backend</h3>
+                    <div class="lista-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">.NET</span>
+                    </div>
+                </div>
+                <div class="categoria-tecnologia">
+                    <h3 class="titulo-categoria-tech">Bases de Datos</h3>
+                    <div class="lista-tech">
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Oracle</span>
+                        <span class="tech-badge">Redis</span>
+                    </div>
+                </div>
+                <div class="categoria-tecnologia">
+                    <h3 class="titulo-categoria-tech">Mobile</h3>
+                    <div class="lista-tech">
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Swift</span>
+                        <span class="tech-badge">Kotlin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compromiso con la Sostenibilidad -->
+    <section class="seccion-sostenibilidad">
+        <div class="contenedor-seccion">
+            <div class="contenido-sostenibilidad">
+                <div class="icono-sostenibilidad">🌱</div>
+                <h2 class="titulo-sostenibilidad">Compromiso con la Sostenibilidad</h2>
+                <p class="texto-sostenibilidad">
+                    En ALMINGO S.L. creemos que la tecnología debe ser una fuerza para el bien. Por eso, integramos principios de sostenibilidad en todos nuestros proyectos:
+                </p>
+                <div class="lista-compromisos">
+                    <div class="compromiso-item">
+                        <span class="icono-compromiso">♻️</span>
+                        <div>
+                            <h4>Código Eficiente</h4>
+                            <p>Optimizamos el código para reducir el consumo energético</p>
+                        </div>
+                    </div>
+                    <div class="compromiso-item">
+                        <span class="icono-compromiso">☁️</span>
+                        <div>
+                            <h4>Cloud Green</h4>
+                            <p>Utilizamos servicios cloud con certificaciones ambientales</p>
+                        </div>
+                    </div>
+                    <div class="compromiso-item">
+                        <span class="icono-compromiso">📚</span>
+                        <div>
+                            <h4>Educación</h4>
+                            <p>Promovemos la concienciación sobre sostenibilidad digital</p>
+                        </div>
+                    </div>
+                    <div class="compromiso-item">
+                        <span class="icono-compromiso">🤝</span>
+                        <div>
+                            <h4>Responsabilidad Social</h4>
+                            <p>Colaboramos con proyectos de impacto social positivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="seccion-cta">
+        <div class="contenedor-cta">
+            <h2 class="titulo-cta">¿Quieres formar parte de nuestra historia?</h2>
+            <p class="texto-cta">Únete a nosotros y llevemos tu proyecto al siguiente nivel</p>
+            <a href="contacto.html" class="boton-cta">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <div class="columna-footer">
+                <h3 class="titulo-footer">ALMINGO S.L.</h3>
+                <p class="texto-footer">Desarrollo de software innovador desde 2010</p>
+            </div>
+            <div class="columna-footer">
+                <h4 class="subtitulo-footer">Enlaces Rápidos</h4>
+                <ul class="lista-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h4 class="subtitulo-footer">Contacto</h4>
+                <p class="texto-footer">Avda. Lehendakari Aguirre 29, 1º</p>
+                <p class="texto-footer">48014 Bilbao, España</p>
+                <p class="texto-footer">📞 +34 94 410 38 37</p>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>© 2025 ALMINGO S.L. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
 </body>
 </html>
