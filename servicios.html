@@ -1,50 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Almingo S.L.</title>
+    <title>Servicios - ALMINGO S.L.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/servicios.css">
 </head>
 <body>
+    <!-- Encabezado -->
+    <header class="cabecera">
+        <div class="contenedor-cabecera">
+            <div class="logo">
+                <span class="icono-logo">💻</span>
+                <span class="texto-logo">ALMINGO S.L.</span>
+            </div>
+            
+            <nav class="menu-navegacion">
+                <a href="index.html" class="enlace-menu">Inicio</a>
+                <a href="servicios.html" class="enlace-menu activo">Servicios</a>
+                <a href="sobre-nosotros.html" class="enlace-menu">Sobre Nosotros</a>
+                <a href="contacto.html" class="enlace-menu">Contacto</a>
+            </nav>
 
-    <header class="encabezado-global">
-        <nav class="navegacion-barra">
-            <div class="logotipo">Almingo S.L.</div>
-            <ul class="lista-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre-nosotros.html">About Us</a></li>
-                <li class="pagina-actual"><a href="servicios.html">Services</a></li>
-                <li><a href="juego.html">The Almingo Game</a></li>
-                <li><a href="contacto.html">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="services.html" class="boton-idioma">
+                <span class="icono-idioma">🌐</span>
+                <span>EN</span>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section id="servicios" class="seccion-contenido">
-            <h2>Our Services</h2>
-            <div class="rejilla-servicios">
-                <div class="tarjeta-servicio">
-                    <h3>Custom Software</h3>
-                    <p>Tailored applications built to solve your unique business challenges and streamline operations.</p>
-                </div>
-                <div class="tarjeta-servicio">
-                    <h3>Database Management</h3>
-                    <p>Modernizing and optimizing your data infrastructure for peak performance, security, and scalability.</p>
-                </div>
-                <div class="tarjeta-servicio">
-                    <h3>Gamification & E-Learning</h3>
-                    <p>Engaging learning experiences, like our new sustainability bingo, to train teams and raise awareness.</p>
+    <!-- Hero de Servicios -->
+    <section class="hero-servicios">
+        <div class="contenedor-hero">
+            <h1 class="titulo-pagina">Nuestros Servicios</h1>
+            <p class="subtitulo-pagina">Soluciones tecnológicas completas para hacer crecer tu negocio</p>
+        </div>
+    </section>
+
+    <!-- Servicios Principales -->
+    <section class="seccion-servicios-principal">
+        <div class="contenedor-seccion">
+            <!-- Desarrollo de Software -->
+            <div class="servicio-detalle">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">💻</div>
+                    <h2 class="titulo-servicio">Desarrollo de Software a Medida</h2>
+                    <p class="descripcion-servicio">Creamos soluciones personalizadas que se adaptan perfectamente a las necesidades específicas de tu empresa. Desde aplicaciones de gestión empresarial hasta sistemas complejos de automatización.</p>
+                    <ul class="lista-servicio">
+                        <li>Análisis de requerimientos</li>
+                        <li>Diseño de arquitectura software</li>
+                        <li>Desarrollo con metodologías ágiles</li>
+                        <li>Testing y control de calidad</li>
+                        <li>Mantenimiento y soporte continuo</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">Java</span>
+                        <span class="etiqueta-tecnologia">Python</span>
+                        <span class="etiqueta-tecnologia">JavaScript</span>
+                        <span class="etiqueta-tecnologia">C#</span>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="pie-de-pagina">
-        <p>&copy; 2026 Almingo S.L. All rights reserved.</p>
+            <!-- Aplicaciones Móviles -->
+            <div class="servicio-detalle invertido">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">📱</div>
+                    <h2 class="titulo-servicio">Desarrollo de Aplicaciones Móviles</h2>
+                    <p class="descripcion-servicio">Aplicaciones nativas e híbridas para iOS y Android que ofrecen una experiencia de usuario excepcional y un rendimiento óptimo en todos los dispositivos.</p>
+                    <ul class="lista-servicio">
+                        <li>Apps nativas (iOS/Android)</li>
+                        <li>Aplicaciones híbridas multiplataforma</li>
+                        <li>Diseño UX/UI intuitivo</li>
+                        <li>Integración con APIs</li>
+                        <li>Publicación en tiendas</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">React Native</span>
+                        <span class="etiqueta-tecnologia">Flutter</span>
+                        <span class="etiqueta-tecnologia">Swift</span>
+                        <span class="etiqueta-tecnologia">Kotlin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bases de Datos -->
+            <div class="servicio-detalle">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">🗄️</div>
+                    <h2 class="titulo-servicio">Gestión de Bases de Datos</h2>
+                    <p class="descripcion-servicio">Diseño, implementación y optimización de bases de datos robustas y escalables. Garantizamos la integridad, seguridad y eficiencia de tus datos.</p>
+                    <ul class="lista-servicio">
+                        <li>Diseño de modelos relacionales normalizados</li>
+                        <li>Implementación y migración de datos</li>
+                        <li>Optimización de consultas</li>
+                        <li>Copias de seguridad y recuperación</li>
+                        <li>Auditoría y seguridad</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">MySQL</span>
+                        <span class="etiqueta-tecnologia">PostgreSQL</span>
+                        <span class="etiqueta-tecnologia">MongoDB</span>
+                        <span class="etiqueta-tecnologia">Oracle</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desarrollo Web -->
+            <div class="servicio-detalle invertido">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">🌐</div>
+                    <h2 class="titulo-servicio">Desarrollo Web Profesional</h2>
+                    <p class="descripcion-servicio">Páginas web modernas, responsivas y optimizadas para SEO. Desde sitios corporativos hasta plataformas de comercio electrónico complejas.</p>
+                    <ul class="lista-servicio">
+                        <li>Diseño web responsive</li>
+                        <li>Desarrollo frontend y backend</li>
+                        <li>Optimización SEO</li>
+                        <li>E-commerce y sistemas de pago</li>
+                        <li>Hosting y mantenimiento</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">HTML5</span>
+                        <span class="etiqueta-tecnologia">CSS3</span>
+                        <span class="etiqueta-tecnologia">React</span>
+                        <span class="etiqueta-tecnologia">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consultoría IT -->
+            <div class="servicio-detalle">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">👥</div>
+                    <h2 class="titulo-servicio">Consultoría y Transformación Digital</h2>
+                    <p class="descripcion-servicio">Asesoramiento experto para la modernización tecnológica de tu empresa. Te ayudamos a identificar oportunidades de mejora y a implementar soluciones efectivas.</p>
+                    <ul class="lista-servicio">
+                        <li>Auditoría tecnológica</li>
+                        <li>Planificación estratégica IT</li>
+                        <li>Migración a la nube</li>
+                        <li>Formación y capacitación</li>
+                        <li>Soporte técnico especializado</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">Cloud Computing</span>
+                        <span class="etiqueta-tecnologia">DevOps</span>
+                        <span class="etiqueta-tecnologia">Agile</span>
+                        <span class="etiqueta-tecnologia">Scrum</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gamificación -->
+            <div class="servicio-detalle invertido destacado">
+                <div class="contenido-servicio">
+                    <div class="icono-servicio-grande">🎮</div>
+                    <h2 class="titulo-servicio">Gamificación y Educación Digital</h2>
+                    <p class="descripcion-servicio">Desarrollamos experiencias de aprendizaje interactivas que aumentan el engagement y la retención de conocimientos.</p>
+                    <ul class="lista-servicio">
+                        <li>Sistemas educativos interactivos</li>
+                        <li>Plataformas multijugador</li>
+                        <li>Validación de conocimientos</li>
+                        <li>Analytics y seguimiento</li>
+                        <li>Integración con LMS</li>
+                    </ul>
+                    <div class="tecnologias">
+                        <span class="etiqueta-tecnologia">Game Design</span>
+                        <span class="etiqueta-tecnologia">Real-time</span>
+                        <span class="etiqueta-tecnologia">Interactive</span>
+                        <span class="etiqueta-tecnologia">Educational</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="seccion-proceso">
+        <div class="contenedor-seccion">
+            <h2 class="titulo-seccion">Nuestro Proceso de Trabajo</h2>
+            <div class="rejilla-proceso">
+                <div class="paso-proceso">
+                    <div class="numero-paso">1</div>
+                    <h3>Análisis</h3>
+                    <p>Entendemos tus necesidades y objetivos empresariales</p>
+                </div>
+                <div class="paso-proceso">
+                    <div class="numero-paso">2</div>
+                    <h3>Diseño</h3>
+                    <p>Creamos la arquitectura y el diseño de la solución</p>
+                </div>
+                <div class="paso-proceso">
+                    <div class="numero-paso">3</div>
+                    <h3>Desarrollo</h3>
+                    <p>Implementamos con las mejores prácticas y tecnologías</p>
+                </div>
+                <div class="paso-proceso">
+                    <div class="numero-paso">4</div>
+                    <h3>Testing</h3>
+                    <p>Probamos exhaustivamente cada funcionalidad</p>
+                </div>
+                <div class="paso-proceso">
+                    <div class="numero-paso">5</div>
+                    <h3>Despliegue</h3>
+                    <p>Ponemos en producción y formamos a tu equipo</p>
+                </div>
+                <div class="paso-proceso">
+                    <div class="numero-paso">6</div>
+                    <h3>Soporte</h3>
+                    <p>Mantenimiento continuo y mejoras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="seccion-cta">
+        <div class="contenedor-cta">
+            <h2 class="titulo-cta">¿Tienes un proyecto en mente?</h2>
+            <p class="texto-cta">Cuéntanos tu idea y te ayudaremos a hacerla realidad</p>
+            <a href="contacto.html" class="boton-cta">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <div class="columna-footer">
+                <h3 class="titulo-footer">ALMINGO S.L.</h3>
+                <p class="texto-footer">Desarrollo de software innovador desde 2010</p>
+            </div>
+            <div class="columna-footer">
+                <h4 class="subtitulo-footer">Enlaces Rápidos</h4>
+                <ul class="lista-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h4 class="subtitulo-footer">Contacto</h4>
+                <p class="texto-footer">Avda. Lehendakari Aguirre 29, 1º</p>
+                <p class="texto-footer">48014 Bilbao, España</p>
+                <p class="texto-footer">📞 +34 94 410 38 37</p>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>© 2025 ALMINGO S.L. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
 </body>
 </html>

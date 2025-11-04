@@ -1,0 +1,84 @@
+/* Minimal page-specific styles for Sobre Nosotros / About Us */
+.hero-sobre-nosotros {
+    padding: 6.5rem 1rem 3rem;
+    text-align: center;
+}
+
+.contenido-historia {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.parrafo-historia { color: #cbd5e1; line-height: 1.8; margin-bottom: 1rem; }
+
+.placeholder-historia {
+    width: 100%;
+    max-width: 350px;
+    height: 320px;
+    background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.08));
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    border: 2px solid rgba(59,130,246,0.12);
+}
+
+.rejilla-mvv { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1rem; max-width:1280px; 
+    margin:0 auto; 
+    padding:0 1rem; 
+}
+.tarjeta-mvv {
+     background: rgba(15,23,42,0.45); 
+     padding: 1.25rem; 
+     border-radius: 0.75rem; 
+     border: 1px solid rgba(59,130,246,0.08); 
+     text-align:center; 
+    }
+.icono-mvv {
+     font-size: 2.5rem; 
+     margin-bottom: 0.5rem; 
+    }
+.titulo-mvv {
+     font-size: 1.1rem; 
+     margin-bottom: 0.5rem; 
+     color: #60a5fa; 
+    }
+
+.rejilla-equipo {
+     display: grid; 
+     grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); 
+     gap: 1rem; 
+     max-width:1280px; 
+     margin:0 auto; 
+     padding:0 1rem; 
+    }
+.tarjeta-miembro { 
+    background: rgba(15,23,42,0.45); 
+    padding: 1rem; 
+    border-radius: 0.75rem; 
+    text-align:center; 
+}
+.foto-miembro { 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    margin: 0 auto 0.75rem; 
+    background: linear-gradient(135deg,#3b82f6,#8b5cf6); 
+    font-size: 2rem; 
+}
+
+@media (max-width: 768px) {
+    .contenido-historia { grid-template-columns: 1fr; }
+}
