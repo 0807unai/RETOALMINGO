@@ -12,7 +12,7 @@
     <header class="cabecera">
         <div class="contenedor-cabecera">
             <div class="logo">
-                <span class="icono-logo">💻</span>
+                <span class="icono-logo">💼</span>
                 <span class="texto-logo">ALMINGO S.L.</span>
             </div>
             
@@ -33,8 +33,8 @@
     <!-- Hero de Contacto -->
     <section class="hero-contacto">
         <div class="contenedor-hero">
-            <h1 class="titulo-pagina">Contáctanos</h1>
-            <p class="subtitulo-pagina">Estamos aquí para ayudarte a transformar tus ideas en realidad</p>
+            <h1 class="titulo-pagina">Contacto Empresarial</h1>
+            <p class="subtitulo-pagina">Solicite información sobre nuestros servicios profesionales</p>
         </div>
     </section>
 
@@ -43,72 +43,71 @@
         <div class="contenedor-contacto">
             <!-- Formulario de Contacto -->
             <div class="tarjeta-formulario">
-                <h2 class="titulo-formulario">Envíanos un Mensaje</h2>
+                <h2 class="titulo-formulario">Formulario de Contacto</h2>
                 <form class="formulario-contacto" id="formularioContacto">
                     <div class="grupo-input">
-                        <label for="nombre" class="etiqueta-input">Nombre Completo *</label>
-                        <input type="text" id="nombre" name="nombre" class="campo-input" required placeholder="Juan Pérez">
+                        <label for="nombre" class="etiqueta-input">Nombre y Apellidos *</label>
+                        <input type="text" id="nombre" name="nombre" class="campo-input" required placeholder="Nombre completo">
                     </div>
 
                     <div class="grupo-input">
-                        <label for="email" class="etiqueta-input">Email *</label>
-                        <input type="email" id="email" name="email" class="campo-input" required placeholder="juan@empresa.com">
+                        <label for="email" class="etiqueta-input">Email Corporativo *</label>
+                        <input type="email" id="email" name="email" class="campo-input" required placeholder="nombre@empresa.com">
                     </div>
 
                     <div class="grupo-input">
-                        <label for="telefono" class="etiqueta-input">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" class="campo-input" placeholder="+34 600 000 000">
+                        <label for="telefono" class="etiqueta-input">Teléfono de Contacto *</label>
+                        <input type="tel" id="telefono" name="telefono" class="campo-input" required placeholder="+34 600 000 000">
                     </div>
 
                     <div class="grupo-input">
-                        <label for="empresa" class="etiqueta-input">Empresa</label>
-                        <input type="text" id="empresa" name="empresa" class="campo-input" placeholder="Nombre de tu empresa">
+                        <label for="empresa" class="etiqueta-input">Empresa *</label>
+                        <input type="text" id="empresa" name="empresa" class="campo-input" required placeholder="Nombre de su empresa">
                     </div>
 
                     <div class="grupo-input">
-                        <label for="servicio" class="etiqueta-input">Servicio de Interés</label>
+                        <label for="servicio" class="etiqueta-input">Área de Interés</label>
                         <select id="servicio" name="servicio" class="campo-select">
-                            <option value="">Selecciona un servicio</option>
-                            <option value="software">Desarrollo de Software</option>
-                            <option value="movil">Aplicaciones Móviles</option>
-                            <option value="web">Desarrollo Web</option>
-                            <option value="bbdd">Bases de Datos</option>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="software">Desarrollo Software Empresarial</option>
+                            <option value="movil">Aplicaciones Móviles Corporativas</option>
+                            <option value="web">Desarrollo Web Corporativo</option>
+                            <option value="bbdd">Administración Bases de Datos</option>
                             <option value="consultoria">Consultoría IT</option>
-                            <option value="gamificacion">Gamificación</option>
+                            <option value="elearning">E-Learning y Formación</option>
                             <option value="otro">Otro</option>
                         </select>
                     </div>
 
                     <div class="grupo-input">
-                        <label for="presupuesto" class="etiqueta-input">Presupuesto Aproximado</label>
+                        <label for="presupuesto" class="etiqueta-input">Presupuesto Estimado</label>
                         <select id="presupuesto" name="presupuesto" class="campo-select">
-                            <option value="">Selecciona un rango</option>
-                            <option value="5k">Menos de 5.000€</option>
-                            <option value="10k">5.000€ - 10.000€</option>
-                            <option value="25k">10.000€ - 25.000€</option>
-                            <option value="50k">25.000€ - 50.000€</option>
-                            <option value="50k+">Más de 50.000€</option>
+                            <option value="">Seleccione un rango</option>
+                            <option value="10k">10.000€ - 25.000€</option>
+                            <option value="25k">25.000€ - 50.000€</option>
+                            <option value="50k">50.000€ - 100.000€</option>
+                            <option value="100k+">Más de 100.000€</option>
                         </select>
                     </div>
 
                     <div class="grupo-input-completo">
-                        <label for="mensaje" class="etiqueta-input">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" class="campo-textarea" rows="6" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        <label for="mensaje" class="etiqueta-input">Descripción del Proyecto *</label>
+                        <textarea id="mensaje" name="mensaje" class="campo-textarea" rows="6" required placeholder="Describa brevemente su proyecto o necesidades tecnológicas..."></textarea>
                     </div>
 
                     <div class="grupo-checkbox">
                         <input type="checkbox" id="privacidad" name="privacidad" required>
                         <label for="privacidad" class="etiqueta-checkbox">
-                            Acepto la <a href="#" class="enlace-privacidad">política de privacidad</a> y el tratamiento de mis datos
+                            Acepto la <a href="#" class="enlace-privacidad">política de privacidad</a> y el tratamiento de mis datos conforme al RGPD
                         </label>
                     </div>
 
                     <button type="submit" class="boton-enviar">
-                        <span>Enviar Mensaje</span>
+                        <span>Enviar Solicitud</span>
                         <span class="icono-enviar">📧</span>
                     </button>
 
-                    <p class="texto-ayuda">* Campos obligatorios</p>
+                    <p class="texto-ayuda">* Campos obligatorios. Recibirá respuesta en un plazo máximo de 24 horas laborables</p>
                 </form>
             </div>
 
