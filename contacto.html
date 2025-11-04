@@ -1,117 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - ALMINGO S.L.</title>
+    <title>Contact Us - Almingo S.L.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="cabecera">
-        <div class="contenedor-cabecera">
-            <div class="logo">
-                <span class="icono-logo">💻</span>
-                <span class="texto-logo">ALMINGO S.L.</span>
-            </div>
-            
-            <nav class="menu-navegacion">
-                <a href="index.html" class="enlace-menu">Inicio</a>
-                <a href="servicios.html" class="enlace-menu">Servicios</a>
-                <a href="sobre-nosotros.html" class="enlace-menu">Sobre Nosotros</a>
-                <a href="contacto.html" class="enlace-menu activo">Contacto</a>
-            </nav>
 
-            <a href="contact.html" class="boton-idioma">
-                <span class="icono-idioma">🌐</span>
-                <span>EN</span>
-            </a>
-        </div>
+    <header class="encabezado-global">
+        <nav class="navegacion-barra">
+            <div class="logotipo">Almingo S.L.</div>
+            <ul class="lista-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre-nosotros.html">About Us</a></li>
+                <li><a href="servicios.html">Services</a></li>
+                <li><a href="juego.html">The Almingo Game</a></li>
+                <li class="pagina-actual"><a href="contacto.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero de Contacto -->
-    <section class="hero-contacto">
-        <div class="contenedor-hero">
-            <h1 class="titulo-pagina">Contáctanos</h1>
-            <p class="subtitulo-pagina">Estamos aquí para ayudarte a transformar tus ideas en realidad</p>
-        </div>
-    </section>
+    <main>
+        <section id="contacto" class="seccion-contenido">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your next project or learn more about Almingo? Contact us.</p>
+            
+            <form class="formulario-contacto">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="boton-primario">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- Sección Principal de Contacto -->
-    <section class="seccion-contacto-principal">
-        <div class="contenedor-contacto">
-            <!-- Formulario de Contacto -->
-            <div class="tarjeta-formulario">
-                <h2 class="titulo-formulario">Envíanos un Mensaje</h2>
-                <form class="formulario-contacto" id="formularioContacto">
-                    <div class="grupo-input">
-                        <label for="nombre" class="etiqueta-input">Nombre Completo *</label>
-                        <input type="text" id="nombre" name="nombre" class="campo-input" required placeholder="Juan Pérez">
-                    </div>
+    <footer class="pie-de-pagina">
+        <p>&copy; 2026 Almingo S.L. All rights reserved.</p>
+    </footer>
 
-                    <div class="grupo-input">
-                        <label for="email" class="etiqueta-input">Email *</label>
-                        <input type="email" id="email" name="email" class="campo-input" required placeholder="juan@empresa.com">
-                    </div>
-
-                    <div class="grupo-input">
-                        <label for="telefono" class="etiqueta-input">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" class="campo-input" placeholder="+34 600 000 000">
-                    </div>
-
-                    <div class="grupo-input">
-                        <label for="empresa" class="etiqueta-input">Empresa</label>
-                        <input type="text" id="empresa" name="empresa" class="campo-input" placeholder="Nombre de tu empresa">
-                    </div>
-
-                    <div class="grupo-input">
-                        <label for="servicio" class="etiqueta-input">Servicio de Interés</label>
-                        <select id="servicio" name="servicio" class="campo-select">
-                            <option value="">Selecciona un servicio</option>
-                            <option value="software">Desarrollo de Software</option>
-                            <option value="movil">Aplicaciones Móviles</option>
-                            <option value="web">Desarrollo Web</option>
-                            <option value="bbdd">Bases de Datos</option>
-                            <option value="consultoria">Consultoría IT</option>
-                            <option value="gamificacion">Gamificación</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-
-                    <div class="grupo-input">
-                        <label for="presupuesto" class="etiqueta-input">Presupuesto Aproximado</label>
-                        <select id="presupuesto" name="presupuesto" class="campo-select">
-                            <option value="">Selecciona un rango</option>
-                            <option value="5k">Menos de 5.000€</option>
-                            <option value="10k">5.000€ - 10.000€</option>
-                            <option value="25k">10.000€ - 25.000€</option>
-                            <option value="50k">25.000€ - 50.000€</option>
-                            <option value="50k+">Más de 50.000€</option>
-                        </select>
-                    </div>
-
-                    <div class="grupo-input-completo">
-                        <label for="mensaje" class="etiqueta-input">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" class="campo-textarea" rows="6" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-                    </div>
-
-                    <div class="grupo-checkbox">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <label for="privacidad" class="etiqueta-checkbox">
-                            Acepto la <a href="#" class="enlace-privacidad">política de privacidad</a> y el tratamiento de mis datos
-                        </label>
-                    </div>
-
-                    <button type="submit" class="boton-enviar">
-                        <span>Enviar Mensaje</span>
-                        <span class="icono-enviar">📧</span>
-                    </button>
-
-                    <p class="texto-ayuda">* Campos obligatorios</p>
-                </form>
-            </div>
-
-          
 </body>
 </html>
