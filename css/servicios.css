@@ -42,7 +42,6 @@
     font-weight: bold;
 }
 
-/* Responsive para móviles */
 @media (max-width: 768px) {
     .servicio-detalle {
         padding: 1.5rem;

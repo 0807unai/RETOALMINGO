@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 .cabecera {
     position: fixed;
     top: 0;
@@ -76,8 +75,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Hero */
-.seccion-hero, .hero-servicios, .hero-contacto, .hero-sobre-nosotros, .hero-juego {
+.seccion-hero, .hero-servicios, .hero-contacto, .hero-sobre-nosotros {
     padding: 8rem 1rem 5rem;
     text-align: center;
 }
@@ -104,7 +102,7 @@ body {
     flex-wrap: wrap;
 }
 
-.boton-principal, .boton-cta, .boton-proyecto, .boton-enviar {
+.boton-principal, .boton-cta, .boton-enviar {
     background: #3b82f6;
     color: #ffffff;
     padding: 1rem 2rem;
@@ -118,39 +116,11 @@ body {
     transition: 0.3s;
 }
 
-.boton-principal:hover, .boton-cta:hover, .boton-proyecto:hover, .boton-enviar:hover {
+.boton-principal:hover, .boton-cta:hover, .boton-enviar:hover {
     background: #2563eb;
     transform: scale(1.05);
 }
 
-.boton-secundario {
-    background: transparent;
-    border: 2px solid #3b82f6;
-    color: #ffffff;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.boton-secundario:hover {
-    background: #3b82f6;
-}
-
-.insignia-proyecto {
-    display: inline-block;
-    background: linear-gradient(135deg, #f59e0b, #ef4444);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-/* Secciones */
 .contenedor-seccion, .contenedor-hero {
     max-width: 1280px;
     margin: 0 auto;
@@ -181,19 +151,13 @@ section {
     background: rgba(15, 23, 42, 0.5);
 }
 
-/* Rejillas */
-.rejilla-caracteristicas, .rejilla-servicios, .rejilla-estadisticas,
-.rejilla-tech-juego, .rejilla-aspectos, .rejilla-preguntas, .rejilla-equipo,
-.rejilla-mvv, .rejilla-proceso, .rejilla-faq {
+.rejilla-caracteristicas, .rejilla-estadisticas, .rejilla-proceso {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-/* Tarjetas */
-.tarjeta-caracteristica, .tarjeta-servicio, .tarjeta-estadistica,
-.tarjeta-tech-juego, .tarjeta-aspecto, .tarjeta-pregunta, .tarjeta-miembro,
-.tarjeta-mvv, .paso-proceso, .tarjeta-faq {
+.tarjeta-caracteristica, .tarjeta-estadistica, .paso-proceso {
     background: rgba(15, 23, 42, 0.5);
     padding: 2rem;
     border-radius: 1rem;
@@ -201,87 +165,25 @@ section {
     transition: 0.3s;
 }
 
-.tarjeta-caracteristica:hover, .tarjeta-servicio:hover, .tarjeta-estadistica:hover,
-.tarjeta-tech-juego:hover, .tarjeta-aspecto:hover, .tarjeta-pregunta:hover,
-.tarjeta-miembro:hover, .paso-proceso:hover, .tarjeta-faq:hover {
+.tarjeta-caracteristica:hover, .tarjeta-estadistica:hover, .paso-proceso:hover {
     transform: translateY(-5px);
     border-color: #3b82f6;
 }
 
-.icono-caracteristica, .icono-mvv, .icono-tech-juego {
+.icono-caracteristica {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.tarjeta-caracteristica h3, .tarjeta-servicio h3 {
+.tarjeta-caracteristica h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
-.tarjeta-caracteristica p, .tarjeta-servicio p {
+.tarjeta-caracteristica p {
     color: #94a3b8;
 }
 
-/* Proyecto Destacado */
-.seccion-proyecto-destacado {
-    background: rgba(15, 23, 42, 0.5);
-}
-
-.contenedor-proyecto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-.etiqueta-proyecto {
-    display: inline-block;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.titulo-proyecto {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.descripcion-proyecto {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
-.lista-beneficios {
-    list-style: none;
-    margin: 1.5rem 0;
-}
-
-.lista-beneficios li {
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
-    color: #cbd5e1;
-}
-
-.placeholder-imagen {
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8rem;
-    border: 2px solid rgba(59, 130, 246, 0.2);
-    margin: 0 auto;
-}
-
-/* Estadísticas */
 .numero-estadistica {
     font-size: 3rem;
     font-weight: bold;
@@ -297,7 +199,6 @@ section {
     color: #cbd5e1;
 }
 
-/* CTA */
 .seccion-cta {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
     text-align: center;
@@ -320,7 +221,6 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Footer */
 .pie-pagina {
     background: #0f172a;
     padding: 3rem 1rem 1rem;
@@ -387,39 +287,6 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Equipo */
-.foto-miembro {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    margin: 0 auto 1rem;
-}
-
-.nombre-miembro {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-.cargo-miembro {
-    color: #60a5fa;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.descripcion-miembro {
-    color: #94a3b8;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-/* Proceso */
 .numero-paso {
     width: 60px;
     height: 60px;
@@ -446,19 +313,6 @@ section {
     color: #94a3b8;
 }
 
-/* FAQ */
-.pregunta-faq {
-    font-size: 1.2rem;
-    color: #60a5fa;
-    margin-bottom: 1rem;
-}
-
-.respuesta-faq {
-    color: #cbd5e1;
-    line-height: 1.8;
-}
-
-/* Responsive para móviles */
 @media (max-width: 768px) {
     .contenedor-cabecera {
         flex-direction: column;
@@ -483,19 +337,8 @@ section {
         font-size: 1.8rem;
     }
 
-    .rejilla-caracteristicas, .rejilla-servicios, .rejilla-estadisticas,
-    .rejilla-tech-juego, .rejilla-aspectos, .rejilla-preguntas, .rejilla-equipo,
-    .rejilla-mvv, .rejilla-proceso, .rejilla-faq {
+    .rejilla-caracteristicas, .rejilla-estadisticas, .rejilla-proceso {
         grid-template-columns: 1fr;
-    }
-
-    .contenedor-proyecto {
-        grid-template-columns: 1fr;
-    }
-
-    .placeholder-imagen {
-        max-width: 100%;
-        height: 300px;
     }
 
     .contenedor-footer {
@@ -517,7 +360,7 @@ section {
         font-size: 1.5rem;
     }
 
-    .boton-principal, .boton-cta, .boton-proyecto, .boton-enviar {
+    .boton-principal, .boton-cta, .boton-enviar {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
