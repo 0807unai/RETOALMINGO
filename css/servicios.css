@@ -41,3 +41,38 @@
     color: #60a5fa;
     font-weight: bold;
 }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .servicio-detalle {
+        padding: 1.5rem;
+    }
+
+    .titulo-servicio {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-servicio {
+        font-size: 1rem;
+    }
+
+    .icono-servicio-grande {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio-detalle {
+        padding: 1rem;
+    }
+
+    .titulo-servicio {
+        font-size: 1.3rem;
+    }
+
+    .lista-servicio li {
+        padding-left: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
