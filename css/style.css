@@ -112,13 +112,13 @@ body {
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer;                                                                                            
     transition: 0.3s;
 }
 
 .boton-principal:hover, .boton-cta:hover, .boton-enviar:hover {
-    background: #2563eb;
-    transform: scale(1.05);
+    background: #2563eb;    
+     transform: scale(1.05);
 }
 
 .contenedor-seccion, .contenedor-hero {
