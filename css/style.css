@@ -457,23 +457,3 @@ section {
     color: #cbd5e1;
     line-height: 1.8;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .menu-navegacion {
-        display: none;
-    }
-    
-    .titulo-principal, .titulo-pagina {
-        font-size: 2rem;
-    }
-    
-    .contenedor-proyecto {
-        grid-template-columns: 1fr;
-    }
-    
-    .rejilla-caracteristicas, .rejilla-servicios, .rejilla-estadisticas,
-    .rejilla-tech-juego, .rejilla-equipo, .contenedor-contacto {
-        grid-template-columns: 1fr;
-    }
-}

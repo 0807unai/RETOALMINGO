@@ -41,19 +41,3 @@
     color: #60a5fa;
     font-weight: bold;
 }
-
-.tecnologias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.etiqueta-tecnologia {
-    background: rgba(59, 130, 246, 0.2);
-    color: #60a5fa;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-    border: 1px solid #3b82f6;
-}

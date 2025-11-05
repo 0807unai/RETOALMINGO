@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <!-- Encabezado -->
     <header class="cabecera">
         <div class="contenedor-cabecera">
             <div class="logo">
@@ -30,7 +29,6 @@
         </div>
     </header>
 
-    <!-- Hero de Contacto -->
     <section class="hero-contacto">
         <div class="contenedor-hero">
             <h1 class="titulo-pagina">Contacto Empresarial</h1>
@@ -38,31 +36,29 @@
         </div>
     </section>
 
-    <!-- Sección Principal de Contacto -->
     <section class="seccion-contacto-principal">
         <div class="contenedor-contacto">
-            <!-- Formulario de Contacto -->
             <div class="tarjeta-formulario">
                 <h2 class="titulo-formulario">Formulario de Contacto</h2>
                 <form class="formulario-contacto" id="formularioContacto">
                     <div class="grupo-input">
                         <label for="nombre" class="etiqueta-input">Nombre y Apellidos *</label>
-                        <input type="text" id="nombre" name="nombre" class="campo-input" required placeholder="Nombre completo">
+                        <input type="text" id="nombre" name="nombre" class="campo-input" required >
                     </div>
 
                     <div class="grupo-input">
                         <label for="email" class="etiqueta-input">Email Corporativo *</label>
-                        <input type="email" id="email" name="email" class="campo-input" required placeholder="nombre@empresa.com">
+                        <input type="email" id="email" name="email" class="campo-input" required >
                     </div>
 
                     <div class="grupo-input">
                         <label for="telefono" class="etiqueta-input">Teléfono de Contacto *</label>
-                        <input type="tel" id="telefono" name="telefono" class="campo-input" required placeholder="+34 600 000 000">
+                        <input type="tel" id="telefono" name="telefono" class="campo-input" required>
                     </div>
 
                     <div class="grupo-input">
                         <label for="empresa" class="etiqueta-input">Empresa *</label>
-                        <input type="text" id="empresa" name="empresa" class="campo-input" required placeholder="Nombre de su empresa">
+                        <input type="text" id="empresa" name="empresa" class="campo-input" required >
                     </div>
 
                     <div class="grupo-input">
@@ -83,6 +79,7 @@
                         <label for="presupuesto" class="etiqueta-input">Presupuesto Estimado</label>
                         <select id="presupuesto" name="presupuesto" class="campo-select">
                             <option value="">Seleccione un rango</option>
+                            <option value="5k">Menos de 10.000€</option>
                             <option value="10k">10.000€ - 25.000€</option>
                             <option value="25k">25.000€ - 50.000€</option>
                             <option value="50k">50.000€ - 100.000€</option>
@@ -92,22 +89,13 @@
 
                     <div class="grupo-input-completo">
                         <label for="mensaje" class="etiqueta-input">Descripción del Proyecto *</label>
-                        <textarea id="mensaje" name="mensaje" class="campo-textarea" rows="6" required placeholder="Describa brevemente su proyecto o necesidades tecnológicas..."></textarea>
-                    </div>
-
-                    <div class="grupo-checkbox">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <label for="privacidad" class="etiqueta-checkbox">
-                            Acepto la <a href="#" class="enlace-privacidad">política de privacidad</a> y el tratamiento de mis datos conforme al RGPD
-                        </label>
+                        <textarea id="mensaje" name="mensaje" class="campo-textarea" rows="6" required></textarea>
                     </div>
 
                     <button type="submit" class="boton-enviar">
                         <span>Enviar Solicitud</span>
-                        <span class="icono-enviar">📧</span>
+                        <span class="icono-enviar">✔️</span>
                     </button>
-
-                    <p class="texto-ayuda">* Campos obligatorios. Recibirá respuesta en un plazo máximo de 24 horas laborables</p>
                 </form>
             </div>
 

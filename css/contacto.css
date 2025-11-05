@@ -54,30 +54,6 @@
     min-height: 150px;
 }
 
-.grupo-checkbox {
-    grid-column: 1 / -1;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.etiqueta-checkbox {
-    color: #cbd5e1;
-    font-size: 0.9rem;
-}
-
-.enlace-privacidad {
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-.texto-ayuda {
-    grid-column: 1 / -1;
-    color: #94a3b8;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
 .boton-enviar {
     grid-column: 1 / -1;
     display: flex;
@@ -98,17 +74,4 @@
     width: 100%;
     max-width: 720px;
 }
-
-@media (max-width: 968px) {
-    .contenedor-contacto {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .formulario-contacto {
-        grid-template-columns: 1fr;
-    }
-}
-
 

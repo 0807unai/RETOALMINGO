@@ -79,6 +79,3 @@
     font-size: 2rem; 
 }
 
-@media (max-width: 768px) {
-    .contenido-historia { grid-template-columns: 1fr; }
-}
