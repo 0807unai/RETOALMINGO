@@ -87,34 +87,3 @@
     background: linear-gradient(135deg, #3b82f6, #8b5cf6);
     font-size: 2rem;
 }
-
-@media (max-width: 768px) {
-    .contenido-historia {
-        grid-template-columns: 1fr;
-    }
-
-    .placeholder-historia {
-        max-width: 100%;
-        height: 250px;
-        margin: 0 auto;
-    }
-
-    .rejilla-mvv, .rejilla-equipo {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-sobre-nosotros {
-        padding: 5rem 1rem 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .tarjeta-mvv, .tarjeta-miembro {
-        padding: 1rem;
-    }
-
-    .parrafo-historia {
-        font-size: 0.95rem;
-    }
-}
-

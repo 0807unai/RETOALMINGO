@@ -64,29 +64,3 @@
     justify-content: center;
     gap: 0.5rem;
 }
-
-@media (max-width: 768px) {
-    .formulario-contacto {
-        grid-template-columns: 1fr;
-    }
-
-    .tarjeta-formulario {
-        padding: 1.5rem;
-    }
-
-    .titulo-formulario {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .tarjeta-formulario {
-        padding: 1rem;
-    }
-
-    .campo-input, .campo-select, .campo-textarea {
-        padding: 0.75rem;
-        font-size: 0.9rem;
-    }
-}
-
