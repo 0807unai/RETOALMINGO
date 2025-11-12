@@ -313,3 +313,137 @@ section {
 .paso-proceso p {
     color: #94a3b8;
 }
+/* Animaciones de Scroll - Solo CSS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Aplicar animaciones a elementos */
+.tarjeta-caracteristica {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.tarjeta-caracteristica:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.tarjeta-caracteristica:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.tarjeta-caracteristica:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.tarjeta-caracteristica:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.tarjeta-estadistica {
+    animation: fadeInScale 0.8s ease forwards;
+    opacity: 0;
+}
+
+.tarjeta-estadistica:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.tarjeta-estadistica:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.tarjeta-estadistica:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.tarjeta-estadistica:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.titulo-seccion {
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
+}
+
+.paso-proceso {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.paso-proceso:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.paso-proceso:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.paso-proceso:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.paso-proceso:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animación para el logo ALMIBYTE */
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo {
+    animation: fadeInLogo 1s ease forwards;
+}
+
+.icono-logo {
+    animation: fadeInScale 1s ease forwards;
+    display: inline-block;
+}
