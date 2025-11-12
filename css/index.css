@@ -1,5 +1,3 @@
-/* Estilos adicionales para sobre-nosotros.html */
-
 .titulo-seccion-izquierda {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -22,7 +20,7 @@
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
-    background-color: rgba(15, 23, 42, 0.5);
+    background: rgba(15, 23, 42, 0.5);
     border-radius: 0.75rem;
     border: 1px solid rgba(59, 130, 246, 0.2);
 }
@@ -31,4 +29,3 @@
     font-size: 2rem;
     flex-shrink: 0;
 }
-

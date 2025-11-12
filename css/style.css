@@ -1,3 +1,4 @@
+/* Reset y Base */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,18 @@ body {
     min-height: 100vh;
 }
 
+/* Contenedores Globales */
+.contenedor-seccion, .contenedor-hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* Header */
 .cabecera {
     position: fixed;
     top: 0;
@@ -37,10 +50,13 @@ body {
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
+    animation: fadeInLogo 1s ease forwards;
 }
 
 .icono-logo {
     font-size: 2rem;
+    animation: fadeInScale 1s ease forwards;
+    display: inline-block;
 }
 
 .menu-navegacion {
@@ -75,6 +91,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Secciones Hero */
 .seccion-hero, .hero-servicios, .hero-contacto, .hero-sobre-nosotros {
     padding: 8rem 1rem 5rem;
     text-align: center;
@@ -102,6 +119,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Botones */
 .boton-principal, .boton-cta, .boton-enviar {
     background: #3b82f6;
     color: #ffffff;
@@ -112,25 +130,22 @@ body {
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
-    cursor: pointer;                                                                                            
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .boton-principal:hover, .boton-cta:hover, .boton-enviar:hover {
-    background: #2563eb;    
-     transform: scale(1.05);
+    background: #2563eb;
+    transform: scale(1.05);
 }
 
-.contenedor-seccion, .contenedor-hero {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
+/* Títulos de Sección */
 .titulo-seccion {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
+    animation: fadeInScale 1s ease forwards;
+    opacity: 0;
 }
 
 .descripcion-seccion {
@@ -143,26 +158,27 @@ body {
     margin-right: auto;
 }
 
-section {
-    padding: 5rem 0;
-}
-
+/* Secciones con Fondo */
 .seccion-caracteristicas, .seccion-servicios-principal, .seccion-equipo-completo {
     background: rgba(15, 23, 42, 0.5);
 }
 
+/* Rejillas */
 .rejilla-caracteristicas, .rejilla-estadisticas, .rejilla-proceso {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-.tarjeta-caracteristica, .tarjeta-estadistica, .paso-proceso {
+/* Tarjetas */
+.tarjeta-caracteristica, .tarjeta-estadistica, .paso-proceso, .tarjeta-miembro, .tarjeta-mvv {
     background: rgba(15, 23, 42, 0.5);
     padding: 2rem;
     border-radius: 1rem;
     border: 1px solid rgba(59, 130, 246, 0.2);
     transition: 0.3s;
+    animation: twisterInUp 1s ease forwards;
+    opacity: 0;
 }
 
 .tarjeta-caracteristica:hover, .tarjeta-estadistica:hover, .paso-proceso:hover {
@@ -170,21 +186,34 @@ section {
     border-color: #3b82f6;
 }
 
-.icono-caracteristica {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
 .tarjeta-caracteristica h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
-.tarjeta-caracteristica p {
+.tarjeta-caracteristica p, .paso-proceso p {
     color: #94a3b8;
 }
 
+.paso-proceso {
+    text-align: center;
+}
+
+.paso-proceso h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Iconos */
+.icono-caracteristica {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: twisterInUp 0.8s ease forwards;
+    display: inline-block;
+}
+
+/* Estadísticas */
 .numero-estadistica {
     font-size: 3rem;
     font-weight: bold;
@@ -200,6 +229,20 @@ section {
     color: #cbd5e1;
 }
 
+.numero-paso {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+/* CTA */
 .seccion-cta {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
     text-align: center;
@@ -222,6 +265,7 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Footer */
 .pie-pagina {
     background: #0f172a;
     padding: 3rem 1rem 1rem;
@@ -288,167 +332,7 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.numero-paso {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0 auto 1rem;
-}
-
-.paso-proceso {
-    text-align: center;
-}
-
-.paso-proceso h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.paso-proceso p {
-    color: #94a3b8;
-}
-/* Animaciones de Scroll - Solo CSS */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Aplicar animaciones a elementos */
-.tarjeta-caracteristica {
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-}
-
-.tarjeta-caracteristica:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.tarjeta-caracteristica:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.tarjeta-caracteristica:nth-child(3) {
-    animation-delay: 0.5s;
-}
-
-.tarjeta-caracteristica:nth-child(4) {
-    animation-delay: 0.7s;
-}
-
-.tarjeta-estadistica {
-    animation: fadeInScale 0.8s ease forwards;
-    opacity: 0;
-}
-
-.tarjeta-estadistica:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.tarjeta-estadistica:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.tarjeta-estadistica:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.tarjeta-estadistica:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-.titulo-seccion {
-    animation: fadeInScale 1s ease forwards;
-    opacity: 0;
-}
-
-.paso-proceso {
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-}
-
-.paso-proceso:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.paso-proceso:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.paso-proceso:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.paso-proceso:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* Animaci�n para el logo ALMIBYTE */
-@keyframes fadeInLogo {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.logo {
-    animation: fadeInLogo 1s ease forwards;
-}
-
-.icono-logo {
-    animation: fadeInScale 1s ease forwards;
-    display: inline-block;
-}
-
-/* Animaci�n TwisterInUp */
+/* Animaciones - Keyframes */
 @keyframes twisterInUp {
     0% {
         opacity: 0;
@@ -471,64 +355,45 @@ section {
     }
 }
 
-@keyframes twisterInRight {
+@keyframes fadeInScale {
     0% {
         opacity: 0;
-        transform: translateX(50px) rotate(180deg) scale(0.5);
+        transform: scale(0.8);
     }
     100% {
         opacity: 1;
-        transform: translateX(0) rotate(0deg) scale(1);
+        transform: scale(1);
     }
 }
 
-/* Aplicar animaciones twister a toda la web */
-.tarjeta-caracteristica {
-    animation: twisterInUp 1s ease forwards !important;
-    opacity: 0;
+@keyframes fadeInLogo {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.tarjeta-estadistica {
-    animation: twisterInUp 1s ease forwards !important;
-    opacity: 0;
-}
-
-.paso-proceso {
-    animation: twisterInUp 1s ease forwards !important;
-    opacity: 0;
-}
-
-.tarjeta-miembro {
-    animation: twisterInUp 1s ease forwards !important;
-    opacity: 0;
-}
-
-.tarjeta-mvv {
-    animation: twisterInUp 1s ease forwards !important;
-    opacity: 0;
-}
-
-.compromiso-item {
-    animation: twisterInLeft 1s ease forwards !important;
+/* Animaciones Específicas */
+.compromiso-item, .servicio-detalle {
+    animation: twisterInLeft 1s ease forwards;
     opacity: 0;
 }
 
 .servicio-detalle {
-    animation: twisterInUp 1.2s ease forwards !important;
-    opacity: 0;
+    animation-duration: 1.2s;
 }
 
-.icono-caracteristica {
-    animation: twisterInUp 0.8s ease forwards;
-    display: inline-block;
-}
-
-/* Delays escalonados para efecto cascada */
+/* Delays Escalonados */
 .tarjeta-caracteristica:nth-child(1),
 .tarjeta-estadistica:nth-child(1),
 .tarjeta-miembro:nth-child(1),
 .tarjeta-mvv:nth-child(1),
-.compromiso-item:nth-child(1) {
+.compromiso-item:nth-child(1),
+.paso-proceso:nth-child(1) {
     animation-delay: 0.1s;
 }
 
@@ -536,7 +401,8 @@ section {
 .tarjeta-estadistica:nth-child(2),
 .tarjeta-miembro:nth-child(2),
 .tarjeta-mvv:nth-child(2),
-.compromiso-item:nth-child(2) {
+.compromiso-item:nth-child(2),
+.paso-proceso:nth-child(2) {
     animation-delay: 0.3s;
 }
 
@@ -544,21 +410,18 @@ section {
 .tarjeta-estadistica:nth-child(3),
 .tarjeta-miembro:nth-child(3),
 .tarjeta-mvv:nth-child(3),
-.compromiso-item:nth-child(3) {
+.compromiso-item:nth-child(3),
+.paso-proceso:nth-child(3) {
     animation-delay: 0.5s;
 }
 
 .tarjeta-caracteristica:nth-child(4),
 .tarjeta-estadistica:nth-child(4),
 .tarjeta-miembro:nth-child(4),
-.compromiso-item:nth-child(4) {
+.compromiso-item:nth-child(4),
+.paso-proceso:nth-child(4) {
     animation-delay: 0.7s;
 }
-
-.paso-proceso:nth-child(1) { animation-delay: 0.2s; }
-.paso-proceso:nth-child(2) { animation-delay: 0.4s; }
-.paso-proceso:nth-child(3) { animation-delay: 0.6s; }
-.paso-proceso:nth-child(4) { animation-delay: 0.8s; }
 
 .servicio-detalle:nth-child(1) { animation-delay: 0.2s; }
 .servicio-detalle:nth-child(2) { animation-delay: 0.5s; }
