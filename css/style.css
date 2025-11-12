@@ -447,3 +447,118 @@ section {
     animation: fadeInScale 1s ease forwards;
     display: inline-block;
 }
+
+/* Animación TwisterInUp */
+@keyframes twisterInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotate(-180deg) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes twisterInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px) rotate(-180deg) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes twisterInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) rotate(180deg) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg) scale(1);
+    }
+}
+
+/* Aplicar animaciones twister a toda la web */
+.tarjeta-caracteristica {
+    animation: twisterInUp 1s ease forwards !important;
+    opacity: 0;
+}
+
+.tarjeta-estadistica {
+    animation: twisterInUp 1s ease forwards !important;
+    opacity: 0;
+}
+
+.paso-proceso {
+    animation: twisterInUp 1s ease forwards !important;
+    opacity: 0;
+}
+
+.tarjeta-miembro {
+    animation: twisterInUp 1s ease forwards !important;
+    opacity: 0;
+}
+
+.tarjeta-mvv {
+    animation: twisterInUp 1s ease forwards !important;
+    opacity: 0;
+}
+
+.compromiso-item {
+    animation: twisterInLeft 1s ease forwards !important;
+    opacity: 0;
+}
+
+.servicio-detalle {
+    animation: twisterInUp 1.2s ease forwards !important;
+    opacity: 0;
+}
+
+.icono-caracteristica {
+    animation: twisterInUp 0.8s ease forwards;
+    display: inline-block;
+}
+
+/* Delays escalonados para efecto cascada */
+.tarjeta-caracteristica:nth-child(1),
+.tarjeta-estadistica:nth-child(1),
+.tarjeta-miembro:nth-child(1),
+.tarjeta-mvv:nth-child(1),
+.compromiso-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.tarjeta-caracteristica:nth-child(2),
+.tarjeta-estadistica:nth-child(2),
+.tarjeta-miembro:nth-child(2),
+.tarjeta-mvv:nth-child(2),
+.compromiso-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.tarjeta-caracteristica:nth-child(3),
+.tarjeta-estadistica:nth-child(3),
+.tarjeta-miembro:nth-child(3),
+.tarjeta-mvv:nth-child(3),
+.compromiso-item:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.tarjeta-caracteristica:nth-child(4),
+.tarjeta-estadistica:nth-child(4),
+.tarjeta-miembro:nth-child(4),
+.compromiso-item:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.paso-proceso:nth-child(1) { animation-delay: 0.2s; }
+.paso-proceso:nth-child(2) { animation-delay: 0.4s; }
+.paso-proceso:nth-child(3) { animation-delay: 0.6s; }
+.paso-proceso:nth-child(4) { animation-delay: 0.8s; }
+
+.servicio-detalle:nth-child(1) { animation-delay: 0.2s; }
+.servicio-detalle:nth-child(2) { animation-delay: 0.5s; }
