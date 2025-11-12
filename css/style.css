@@ -139,6 +139,12 @@ section {
     transform: scale(1.05);
 }
 
+/* Animación de caída para botón */
+.boton-caida {
+    animation: caida 0.8s ease-out forwards;
+    opacity: 0;
+}
+
 /* Títulos de Sección */
 .titulo-seccion {
     font-size: 2.5rem;
@@ -333,6 +339,20 @@ section {
 }
 
 /* Animaciones - Keyframes */
+@keyframes caida {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes twisterInUp {
     0% {
         opacity: 0;
