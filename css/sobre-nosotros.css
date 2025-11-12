@@ -35,18 +35,20 @@
 .rejilla-mvv {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .tarjeta-mvv {
-    background: rgba(15, 23, 42, 0.45);
-    padding: 1.25rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(59, 130, 246, 0.08);
+    background: var(--card-bg);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--card-border);
     text-align: center;
+    min-height: var(--card-min-height);
+    box-sizing: border-box;
 }
 
 .icono-mvv {
@@ -63,17 +65,19 @@
 .rejilla-equipo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .tarjeta-miembro {
-    background: rgba(15, 23, 42, 0.45);
-    padding: 1rem;
-    border-radius: 0.75rem;
+    background: var(--card-bg);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
     text-align: center;
+    min-height: var(--card-min-height);
+    box-sizing: border-box;
 }
 
 .foto-miembro {

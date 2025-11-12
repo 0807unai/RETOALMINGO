@@ -1,9 +1,11 @@
 .servicio-detalle {
-    background: rgba(15, 23, 42, 0.5);
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    background: var(--card-bg);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--card-border);
     margin-bottom: 2rem;
+    min-height: var(--card-min-height);
+    box-sizing: border-box;
 }
 
 .icono-servicio-grande {
@@ -14,13 +16,14 @@
 .titulo-servicio {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #333333;
 }
 
 .descripcion-servicio {
-    color: #cbd5e1;
+    color: #666666;
     margin-bottom: 1.5rem;
-    line-height: 1.8;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
 }
 
 .lista-servicio {
@@ -31,7 +34,7 @@
 .lista-servicio li {
     padding: 0.5rem 0 0.5rem 2rem;
     position: relative;
-    color: #cbd5e1;
+    color: #333333;
 }
 
 .lista-servicio li::before {
