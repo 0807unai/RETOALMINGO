@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
-    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333333;
     line-height: 1.6;
     min-height: 100vh;
 }
@@ -29,10 +29,11 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.95);
+    background: #ffffff;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contenedor-cabecera {
@@ -51,6 +52,7 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
     animation: fadeInLogo 1s ease forwards;
+    color: #333333;
 }
 
 .icono-logo {
@@ -65,20 +67,21 @@ section {
 }
 
 .enlace-menu {
-    color: #ffffff;
+    color: #333333;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 .enlace-menu:hover, .enlace-menu.activo {
-    color: #60a5fa;
+    color: #0066cc;
 }
 
 .boton-idioma {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: #3b82f6;
+    background: #0066cc;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -87,7 +90,7 @@ section {
 }
 
 .boton-idioma:hover {
-    background: #2563eb;
+    background: #004499;
     transform: scale(1.05);
 }
 
@@ -95,20 +98,18 @@ section {
 .seccion-hero, .hero-servicios, .hero-contacto, .hero-sobre-nosotros {
     padding: 8rem 1rem 5rem;
     text-align: center;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
 }
 
 .titulo-principal, .titulo-pagina {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #60a5fa, #8b5cf6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0066cc;
 }
 
 .subtitulo-principal, .subtitulo-pagina {
     font-size: 1.25rem;
-    color: #cbd5e1;
+    color: #666666;
     margin-bottom: 2rem;
 }
 
@@ -121,7 +122,7 @@ section {
 
 /* Botones */
 .boton-principal, .boton-cta, .boton-enviar {
-    background: #3b82f6;
+    background: #0066cc;
     color: #ffffff;
     padding: 1rem 2rem;
     border: none;
@@ -135,7 +136,7 @@ section {
 }
 
 .boton-principal:hover, .boton-cta:hover, .boton-enviar:hover {
-    background: #2563eb;
+    background: #004499;
     transform: scale(1.05);
 }
 
@@ -152,12 +153,13 @@ section {
     margin-bottom: 3rem;
     animation: fadeInScale 1s ease forwards;
     opacity: 0;
+    color: #0066cc;
 }
 
 .descripcion-seccion {
     text-align: center;
     font-size: 1.25rem;
-    color: #cbd5e1;
+    color: #666666;
     margin-bottom: 3rem;
     max-width: 700px;
     margin-left: auto;
@@ -166,7 +168,7 @@ section {
 
 /* Secciones con Fondo */
 .seccion-caracteristicas, .seccion-servicios-principal, .seccion-equipo-completo {
-    background: rgba(15, 23, 42, 0.5);
+    background: #ffffff;
 }
 
 /* Rejillas */
@@ -178,10 +180,10 @@ section {
 
 /* Tarjetas */
 .tarjeta-caracteristica, .tarjeta-estadistica, .paso-proceso, .tarjeta-miembro, .tarjeta-mvv {
-    background: rgba(15, 23, 42, 0.5);
+    background: #f9f9f9;
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid rgba(59, 130, 246, 0.2);
+    border: 1px solid #e0e0e0;
     transition: 0.3s;
     animation: twisterInUp 1s ease forwards;
     opacity: 0;
@@ -189,7 +191,8 @@ section {
 
 .tarjeta-caracteristica:hover, .tarjeta-estadistica:hover, .paso-proceso:hover {
     transform: translateY(-5px);
-    border-color: #3b82f6;
+    border-color: #0066cc;
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
 }
 
 .tarjeta-caracteristica h3 {
@@ -198,7 +201,7 @@ section {
 }
 
 .tarjeta-caracteristica p, .paso-proceso p {
-    color: #94a3b8;
+    color: #666666;
 }
 
 .paso-proceso {
@@ -223,22 +226,19 @@ section {
 .numero-estadistica {
     font-size: 3rem;
     font-weight: bold;
-    background: linear-gradient(135deg, #60a5fa, #8b5cf6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0066cc;
     margin-bottom: 0.5rem;
 }
 
 .texto-estadistica {
     font-size: 1.1rem;
-    color: #cbd5e1;
+    color: #666666;
 }
 
 .numero-paso {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background: #0066cc;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -246,11 +246,12 @@ section {
     font-size: 2rem;
     font-weight: bold;
     margin: 0 auto 1rem;
+    color: #ffffff;
 }
 
 /* CTA */
 .seccion-cta {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+    background: linear-gradient(135deg, #e6f0ff, #f0e6ff);
     text-align: center;
     padding: 5rem 1rem;
 }
@@ -263,19 +264,21 @@ section {
 .titulo-cta {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #0066cc;
 }
 
 .texto-cta {
     font-size: 1.25rem;
-    color: #cbd5e1;
+    color: #666666;
     margin-bottom: 2rem;
 }
 
 /* Footer */
 .pie-pagina {
-    background: #0f172a;
+    background: #333333;
     padding: 3rem 1rem 1rem;
-    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    border-top: 1px solid #e0e0e0;
+    color: #ffffff;
 }
 
 .contenedor-footer {
@@ -303,7 +306,7 @@ section {
 }
 
 .texto-footer {
-    color: #cbd5e1;
+    color: #cccccc;
     margin-bottom: 0.5rem;
 }
 
@@ -316,20 +319,20 @@ section {
 }
 
 .lista-footer a {
-    color: #cbd5e1;
+    color: #cccccc;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .lista-footer a:hover {
-    color: #60a5fa;
+    color: #0066cc;
 }
 
 .footer-inferior {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(59, 130, 246, 0.2);
-    color: #94a3b8;
+    color: #999999;
     max-width: 1280px;
     margin: 0 auto;
 }
