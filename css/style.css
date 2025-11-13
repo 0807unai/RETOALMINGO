@@ -178,10 +178,18 @@ section {
     transform: scale(1.05);
 }
 
-/* Animación de caída para botón */
+/* Animación de caída para botón - SOLO EN INICIO */
 .boton-caida {
     animation: caida 0.8s ease-out forwards;
     opacity: 0;
+}
+
+/* Desactivar animaciones de entrada en páginas internas */
+.hero-servicios .titulo-seccion,
+.hero-contacto .titulo-seccion,
+.hero-sobre-nosotros .titulo-seccion {
+    animation: none !important;
+    opacity: 1 !important;
 }
 
 /* Títulos de Sección */

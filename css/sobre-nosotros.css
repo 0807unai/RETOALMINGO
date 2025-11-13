@@ -49,6 +49,8 @@
     text-align: center;
     min-height: var(--card-min-height);
     box-sizing: border-box;
+    animation: none !important;
+    opacity: 1 !important;
 }
 
 .icono-mvv {
@@ -78,6 +80,8 @@
     text-align: center;
     min-height: var(--card-min-height);
     box-sizing: border-box;
+    animation: none !important;
+    opacity: 1 !important;
 }
 
 .foto-miembro {
