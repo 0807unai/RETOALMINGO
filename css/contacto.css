@@ -1,3 +1,4 @@
+/* Desactivar animaciones en página de contacto (no es inicio/home) */
 .tarjeta-formulario {
     background: var(--card-bg);
     padding: var(--card-padding);
@@ -7,6 +8,8 @@
     width: 100%;
     max-width: 720px;
     box-sizing: border-box;
+    animation: none !important;
+    opacity: 1 !important;
 }
 
 .titulo-formulario {
